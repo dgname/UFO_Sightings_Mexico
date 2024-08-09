@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #000; /* Space black background */
+  font-family: Arial, sans-serif;
+  color: white; /* Ensure text is visible */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%; /* Twice the height to allow for scrolling effect */
+  background: url('https://unblast.com/wp-content/uploads/2020/07/Star-Patterns-3.jpg') repeat;
+  background-size: 50%; /* Zoom out the background */
+  z-index: 0;
+  animation: moveStars 60s linear infinite; /* Slower animation */
+}
+
+@keyframes moveStars {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } /* Scroll halfway through the double-height background */
+}
+
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#map, #animatedMap {
+  border: 5px solid white; /* Adds a white border with a thickness of 5px */
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#pie, #bar {
+  width: 100%;
+  height: 400px;
+}
+
+.footer {
+  height: 100px; /* Space below the animated map */
+}
+
+.year-control {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Change the text color of "Select state:" to black */
+.card h6 {
+  color: black;
+}
