@@ -15,7 +15,6 @@ This project visualizes UFO sightings in Mexico using an interactive map, data c
 1. **Environment Setup**:
    - Ensure you have Python installed along with the following libraries: `Flask`, `SQLAlchemy`, `pandas`, `d3`, `beautifulsoup4`, `splinter`, `fuzzywuzzy`, and `requests`.
    - Install `Jupyter Notebook` for data preprocessing.
-   - Configure a PostgreSQL database and set the connection string in `config.py`.
 
 2. **Run the Data Extraction and Cleaning**:
    - Open the `scraping_and_cleaning.ipynb` notebook in Jupyter Notebook.
@@ -87,7 +86,7 @@ This project visualizes UFO sightings in Mexico using an interactive map, data c
 ### How to Use
 
 1. **Run Data Extraction and Cleaning**:
-   - Execute the cells in `scraping_and_cleaning.ipynb` to scrape and clean the data.
+   - Execute cells in `scraping_and_cleaning.ipynb` to scrape and clean the data.
 
 2. **View the Main Map**:
    - Visit `http://localhost:5000` to see the interactive map.
